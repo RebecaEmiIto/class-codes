@@ -22,13 +22,14 @@ public class ListaTest {
 
     @Test
     public void testInserirDoisElementos(){
+        //cenário
         Lista lista = new Lista();
         Node n1 = new Node(1);
         Node n2 = new Node(2);
-
+        //ação
         lista.adicionar(n1);
         lista.adicionar(n2);
-
+        //teste
         assertEquals(2, lista.getTamanho());
         assertEquals(n2, lista.get(2));
     }

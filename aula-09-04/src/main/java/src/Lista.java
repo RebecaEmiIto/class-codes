@@ -24,15 +24,16 @@ public class Lista{
         }else{
             Node aux = this.inicio;            
             while(aux.getProximo() != null){
-                aux = aux.getProximo();
-                _posicao--;
+                for(int i = 0; i < _posicao; i++){
+                    aux = aux.getProximo();
+                    _posicao--;
+                }     
             }
-            return null;
+            return aux;
         }
     }
 
     public int getTamanho(){
         return this.tamanho;
     }
-
 }
