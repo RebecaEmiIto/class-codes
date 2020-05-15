@@ -24,7 +24,7 @@ public class Lista{
         }else{
             Node aux = this.inicio;            
             while(aux.getProximo() != null){
-                for(int i = 0; i < getTamanho(); i++){
+                for(int i = 0; i < _posicao; i++){
                     aux = aux.getProximo();
                     _posicao--;
                 }     
